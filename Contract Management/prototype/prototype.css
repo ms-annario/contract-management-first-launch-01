@@ -1,0 +1,10 @@
+/* Prototype-only header: brand label, disclaimer and the role switcher. */
+@layer app{
+.brand small{font-stretch:100%;font-weight:500;font-size:12px;color:var(--ink-3);margin-left:8px}
+.brand-disclaimer{font-size:12px;color:var(--ink-3);font-weight:400;line-height:1.4}
+.rolesel{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-2)}
+.rolesel select{font-weight:600;min-width:290px;color:var(--ink)}
+@media (max-width:820px){
+  .rolesel{flex:1}.rolesel span{display:none}.rolesel select{min-width:0;width:100%}
+}
+}

@@ -1,0 +1,19 @@
+/* Design tokens: colour palette (light and dark), fonts and the top bar height. */
+:root{
+  --paper:#F2F4F6;--surface:#FFFFFF;--sunk:#E9EDF1;--ink:#172230;--ink-2:#4D5B6B;--ink-3:#738294;--rule:#D3DAE1;--rule-strong:#172230;
+  --marker:#F0B91D;--marker-soft:#FCEFC4;--marker-ink:#3D2E00;
+  --n-bg:#E6EAEE;--n-fg:#3B4652;--a-bg:#E2ECF8;--a-fg:#1D4F86;--w-bg:#FBF0D3;--w-fg:#7A5600;
+  --g-bg:#E1F1E8;--g-fg:#1F6B45;--b-bg:#F8E3DE;--b-fg:#9A3520;
+  --sans:"Archivo","Helvetica Neue",Arial,system-ui,sans-serif;--serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --top-h:58px;--act:#DC2626;
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151B;--surface:#171E26;--sunk:#0C1015;--ink:#E4E9EE;--ink-2:#9DA9B6;--ink-3:#7A8796;--rule:#2A3541;--rule-strong:#C9D2DB;
+  --marker:#E2AE1C;--marker-soft:#3A2F10;--marker-ink:#F6DE94;
+  --n-bg:#26303A;--n-fg:#C5CED7;--a-bg:#1A2F47;--a-fg:#9CC3EE;--w-bg:#3A2F12;--w-fg:#F1D27F;--g-bg:#16352A;--g-fg:#93D6B1;--b-bg:#42221B;--b-fg:#F0A792;--act:#EF4444;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151B;--surface:#171E26;--sunk:#0C1015;--ink:#E4E9EE;--ink-2:#9DA9B6;--ink-3:#7A8796;--rule:#2A3541;--rule-strong:#C9D2DB;
+  --marker:#E2AE1C;--marker-soft:#3A2F10;--marker-ink:#F6DE94;
+  --n-bg:#26303A;--n-fg:#C5CED7;--a-bg:#1A2F47;--a-fg:#9CC3EE;--w-bg:#3A2F12;--w-fg:#F1D27F;--g-bg:#16352A;--g-fg:#93D6B1;--b-bg:#42221B;--b-fg:#F0A792;--act:#EF4444;color-scheme:dark}

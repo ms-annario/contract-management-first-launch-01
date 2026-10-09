@@ -1,0 +1,12 @@
+/* Tender stage progress list. */
+.stages{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px}
+.stages li{display:flex;flex-direction:column;gap:6px;min-width:0}
+.stages i{display:block;height:10px;border-radius:2px;background:var(--sunk);border:1px solid var(--rule)}
+.stages span{font-size:12px;line-height:1.3;color:var(--ink-3);overflow-wrap:anywhere}
+.stages li.done i{background:var(--ink);border-color:var(--ink)}
+.stages li.done span{color:var(--ink-2)}
+.stages li.cur i{background:var(--marker);border-color:var(--marker)}
+.stages li.cur span{color:var(--ink);font-weight:700}
+.panel:has(> .stages){container-type:inline-size}
+@container (max-width:640px){.stages{grid-template-columns:repeat(5,minmax(0,1fr));row-gap:12px}}
+@media (max-width:640px){.stages{grid-template-columns:repeat(5,minmax(0,1fr));row-gap:12px}}

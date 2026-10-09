@@ -1,0 +1,10 @@
+/* Form fields and controls. */
+.field{display:flex;flex-direction:column;gap:4px;margin-bottom:12px}
+.field label{font-size:13px;font-weight:600;color:var(--ink-2)}
+input[type=text],input[type=email],input[type=password],input[type=date],input[type=number],select,textarea{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:7px 10px;font-size:14px;width:100%}
+select{width:auto}.field select{width:100%}
+textarea{min-height:84px;resize:vertical}
+.check{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin:6px 0}
+.check input{margin-top:3px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.err{color:var(--b-fg);font-size:13px;margin:4px 0 0}

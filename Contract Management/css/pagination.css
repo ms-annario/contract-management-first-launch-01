@@ -1,0 +1,10 @@
+/* Pagination controls. */
+/* Pagination */
+.pg-off{display:none!important}
+.pager{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;flex-wrap:wrap;margin:12px 0 4px;font-size:13px;color:var(--ink-2)}
+.pager-btns{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.pager-btn{min-width:32px;height:32px;padding:0 9px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);font:inherit;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background-color .15s ease}
+.pager-btn:hover:not([disabled]):not([aria-current]){background:var(--sunk)}
+.pager-btn[aria-current="page"]{background:var(--ink);border-color:var(--ink);color:var(--paper);cursor:default}
+.pager-btn[disabled]{opacity:.4;cursor:default}
+.pager-gap{min-width:20px;text-align:center;color:var(--ink-3)}

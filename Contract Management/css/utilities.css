@@ -1,0 +1,149 @@
+/* One-property utility classes that replaced inline style attributes.
+   Loaded outside the app layer, so they take precedence over component rules
+   (as inline styles did) while runtime element.style changes still override them.
+   Shorthands come first so a longhand on the same element wins. */
+.u-bg-bg-card{background:var(--bg-card)}
+.u-bg-ffd166{background:#ffd166}
+.u-bg-marker-soft{background:var(--marker-soft,rgba(59,130,246,0.08))}
+.u-bg-rule{background:var(--rule)}
+.u-bg-sunk{background:var(--sunk)}
+.u-bg-surface{background:var(--surface)}
+.u-border-1-solid-rule{border:1px solid var(--rule)}
+.u-border-1p5-solid-rule{border:1.5px solid var(--rule)}
+.u-border-2-dashed-border{border:2px dashed var(--border)}
+.u-border-2-solid-marker-ink{border:2px solid var(--marker-ink,#3b82f6)}
+.u-flex-1{flex:1}
+.u-flex-2{flex:2}
+.u-flex-2p5{flex:2.5}
+.u-inset-0{inset:0}
+.u-list-none{list-style:none}
+.u-m-0{margin:0}
+.u-m-0-0-10{margin:0 0 10px}
+.u-m-0-0-6{margin:0 0 6px}
+.u-m-0-4{margin:0 4px}
+.u-m-10-0-0{margin:10px 0 0}
+.u-m-12-0{margin:12px 0}
+.u-m-12-0-0{margin:12px 0 0}
+.u-m-16-0-18{margin:16px 0 18px}
+.u-m-30-0-12{margin:30px 0 12px}
+.u-m-4-0-0{margin:4px 0 0}
+.u-m-4-0-12{margin:4px 0 12px}
+.u-m-6-0-14{margin:6px 0 14px}
+.u-m-8-0-0{margin:8px 0 0}
+.u-m-8-0-4{margin:8px 0 4px}
+.u-m-8-0-6{margin:8px 0 6px}
+.u-overflow-auto{overflow:auto}
+.u-p-0{padding:0}
+.u-p-0-16{padding:0 16px}
+.u-p-0-2{padding:0 2px}
+.u-p-0-5{padding:0 5px}
+.u-p-10{padding:10px}
+.u-p-12{padding:12px}
+.u-p-12-14{padding:12px 14px}
+.u-p-1p5-5p5{padding:1.5px 5.5px}
+.u-p-2-8{padding:2px 8px}
+.u-p-22{padding:22px}
+.u-p-24-20{padding:24px 20px}
+.u-p-28-20{padding:28px 20px}
+.u-p-32-20{padding:32px 20px}
+.u-p-36-20{padding:36px 20px}
+.u-p-4-0{padding:4px 0}
+.u-p-4-10{padding:4px 10px}
+.u-p-5-0{padding:5px 0}
+.u-p-6-0{padding:6px 0}
+.u-p-7-0{padding:7px 0}
+.u-transition-all{transition:all .15s ease}
+.u-transition-border-color{transition:border-color .15s ease}
+.u-items-center{align-items:center}
+.u-border-b-1-solid-rule{border-bottom:1px solid var(--rule)}
+.u-rounded-2{border-radius:2px}
+.u-rounded-4{border-radius:4px}
+.u-rounded-6{border-radius:6px}
+.u-rounded-8{border-radius:8px}
+.u-text-111{color:#111}
+.u-text-b-fg{color:var(--b-fg)}
+.u-text-g-fg{color:var(--g-fg)}
+.u-text-inherit{color:inherit}
+.u-text-ink{color:var(--ink)}
+.u-text-ink-2{color:var(--ink-2)}
+.u-text-muted{color:var(--muted)}
+.u-text-w-fg{color:var(--w-fg)}
+.u-cursor-pointer{cursor:pointer}
+.u-d-block{display:block}
+.u-d-flex{display:flex}
+.u-d-grid{display:grid}
+.u-d-inline-block{display:inline-block}
+.u-d-inline-flex{display:inline-flex}
+.u-d-none{display:none}
+.u-flex-col{flex-direction:column}
+.u-flex-wrap{flex-wrap:wrap}
+.u-fs-10p5{font-size:10.5px}
+.u-fs-11{font-size:11px}
+.u-fs-12{font-size:12px}
+.u-fs-13{font-size:13px}
+.u-fs-13p5{font-size:13.5px}
+.u-fs-14{font-size:14px}
+.u-fs-9p5{font-size:9.5px}
+.u-fw-600{font-weight:600}
+.u-fw-650{font-weight:650}
+.u-gap-10{gap:10px}
+.u-gap-12{gap:12px}
+.u-gap-18{gap:18px}
+.u-gap-6{gap:6px}
+.u-gap-8{gap:8px}
+.u-cols-1fr-1fr{grid-template-columns:1fr 1fr}
+.u-cols-260-fr{grid-template-columns:260px minmax(0,1fr)}
+.u-cols-3{grid-template-columns:repeat(3,1fr)}
+.u-h-16{height:16px}
+.u-h-20{height:20px}
+.u-h-full{height:100%}
+.u-justify-between{justify-content:space-between}
+.u-tracking-0p04em{letter-spacing:0.04em}
+.u-leading-1p5{line-height:1.5}
+.u-leading-1p6{line-height:1.6}
+.u-mb-10{margin-bottom:10px}
+.u-mb-12{margin-bottom:12px}
+.u-mb-16{margin-bottom:16px}
+.u-mb-4{margin-bottom:4px}
+.u-mb-6{margin-bottom:6px}
+.u-mb-8{margin-bottom:8px}
+.u-ml-0{margin-left:0}
+.u-ml-4{margin-left:4px}
+.u-ml-8{margin-left:8px}
+.u-ml-auto{margin-left:auto}
+.u-mr-2{margin-right:2px}
+.u-mr-4{margin-right:4px}
+.u-mr-5{margin-right:5px}
+.u-mr-6{margin-right:6px}
+.u-mt-0{margin-top:0}
+.u-mt-10{margin-top:10px}
+.u-mt-12{margin-top:12px}
+.u-mt-14{margin-top:14px}
+.u-mt-6{margin-top:6px}
+.u-mt-8{margin-top:8px}
+.u-mt-auto{margin-top:auto}
+.u-max-h-160{max-height:160px}
+.u-max-h-220{max-height:220px}
+.u-max-h-320{max-height:320px}
+.u-max-h-46vh{max-height:46vh}
+.u-max-h-60vh{max-height:60vh}
+.u-max-w-70ch{max-width:70ch}
+.u-min-w-120{min-width:120px}
+.u-min-w-200{min-width:200px}
+.u-opacity-0{opacity:0}
+.u-overflow-y-auto{overflow-y:auto}
+.u-pl-18{padding-left:18px}
+.u-pt-0{padding-top:0}
+.u-pos-absolute{position:absolute}
+.u-pos-relative{position:relative}
+.u-text-center{text-align:center}
+.u-decoration-none{text-decoration:none}
+.u-case-upper{text-transform:uppercase}
+.u-va-middle{vertical-align:middle}
+.u-va-n1{vertical-align:-1px}
+.u-va-n2{vertical-align:-2px}
+.u-w-1{width:1px}
+.u-w-20{width:20px}
+.u-w-40{width:40px}
+.u-w-auto{width:auto}
+.u-w-full{width:100%}
